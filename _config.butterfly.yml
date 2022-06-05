@@ -77,7 +77,7 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/site/favicon.webp
+favicon: /img/site/avatar.webp
 
 # Avatar (頭像)
 avatar:
@@ -613,8 +613,8 @@ font:
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link: https://fonts.cdnfonts.com/css/blanka
-  font-family: Blanka
+  font_link:    #https://fonts.cdnfonts.com/css/blanka
+  font-family:  #Blanka
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
