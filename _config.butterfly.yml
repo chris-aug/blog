@@ -36,8 +36,7 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-   fab fa-github: https://github.com/chrisrisss || Github
-   fas fa-envelope: mailto:hi@blankcoder.com || Mail
+   fab fa-github: https://github.com/mariwindev || Github
    fas fa-rss-square: https://blog.blankcoder.com/atom.xml || RSS
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
@@ -401,8 +400,8 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: <a href="https://icp.gov.moe/?keyword=20220199" rel="nofollow noopener noreferrer" target="_blank">萌ICP备20220199号</a>
-  copyright: false # Copyright of theme and framework
+  custom_text: 
+  copyright: true # Copyright of theme and framework
 
 # Analysis
 # --------------------------------------
@@ -646,7 +645,7 @@ preloader: true
 # --------------------------------------
 
 aside:
-  enable: true
+  enable: false
   hide: false
   button: true
   mobile: true # display on mobile
@@ -859,6 +858,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    # 301
   bottom:
     <div class="aplayer no-destroy" data-id="7455690756" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-lrctype="false"> </div>
     # - <script src="xxxx"></script>
