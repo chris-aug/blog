@@ -145,7 +145,7 @@ theme: butterfly
 
 ## aplayer 音乐插件
 aplayer:
-  meting: true
+  meting: false
   asset_inject: false
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
