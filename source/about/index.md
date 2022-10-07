@@ -10,5 +10,5 @@ aside: false
 ## 😅间歇性失踪人口
 - 还是个学生
 ## 📵找到我
-- {% btn ' mailto:hi@blankcoder.com',Click here,fas fa-envelope%}
+- {% btn ' mailto:hi@marwin.dev ',Click here,fas fa-envelope%}
 

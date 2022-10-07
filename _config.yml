@@ -13,7 +13,7 @@ timezone: 'Asia/Singapore'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.blankcoder.com
+url: https://talk.marwin.dev
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
