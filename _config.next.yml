@@ -169,7 +169,7 @@ social:
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
   GitHub: https://github.com/chris-aug || fab fa-github
-  E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  E-Mail: mailto:hi@typeof.cc || fa fa-envelope
   RSS: /atom.xml || fa fa-rss
 
 social_icons:
@@ -393,15 +393,15 @@ back2top:
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
-  enable: true
+  enable: false
   # Available values: left | right
   start_at: right
   # Available values: top | bottom
-  position: top
+  position: bottom
   reversed: false
   color: "#37c6c0"
   height: 3px
