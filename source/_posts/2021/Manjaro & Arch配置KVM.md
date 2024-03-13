@@ -12,7 +12,7 @@ aplayer:
 ---
 
 ## 检查 KVM 支持
-### 硬件检查（主要）
+### 硬件
 KVM 需要虚拟机宿主 (host) 的处理器带有虚拟化支持（对于 Intel 处理器来说是VT-x，对于AMD处理器来说是AMD-V），你可以通过以下命令来检查你的处理器是否支持虚拟化： 
 ```shell
 $ LC_ALL=C lscpu | grep Virtualization
@@ -26,7 +26,7 @@ Virtualization:                  VT-x
 
 <!--more-->
 
-### 内核检查
+### 内核
 通常情况下，相对较新的 Linux 内核都提供了相应的内核模块来支持 KVM.
 
 - 你可以通过以下命令来检查内核是否包含了支持虚拟化的模块：
@@ -51,13 +51,16 @@ $ zgrep CONFIG_KVM /proc/config.gz
 ```
 $ pacman -S packages
 ```
-## 将用户加入 KVM 与 libvirt 组
+## 权限与服务
+> 将用户加入 KVM 与 libvirt 组
+
 ```
 $ usermod -a -G group username
 ```
 **注：** root用户此处跳过
 
-## 启动 libvirtd 服务并设置开机启动
+> 启动 libvirtd 服务并设置开机启动
+
 ```shell
 $ systemctl start libvirted
 $ systemctl enable libvirted
@@ -82,7 +85,7 @@ sudo virsh net-start default
 sudo virsh net-autostart default
 ```
 
-### 性能监控工具 （Performance Monitoring Tools）
+### 性能监控（Performance Monitoring Tools）
 Virtual Machine Manager 默认情况下只会显示 `CPU usage` ，当点击View想启用其他参数显示时，均为灰色不可操作选项，提示信息为： `Disable in perferences dialog.` 参考RedHat官方文档：[Monitoring Performance in Virtual Machine Manager](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_tuning_and_optimization_guide/sect-virtualization_tuning_optimization_guide-monitoring_in_virt_manager). 
 步骤为：
 

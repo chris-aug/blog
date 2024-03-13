@@ -13,15 +13,14 @@ aplayer:
 
 ## 我的使用场景
 
-我个人是 [使用 Linux 作为主系统](https://blog.blankcoder.com/posts/81acf3e4.html) ，同时在上篇文章 [Manjaro & Arch 配置 KVM](https://blog.blankcoder.com/posts/8fa8ffbb.html) 中，将虚拟机从 VMware 替换为了开源 KVM 后，与 Windows 虚拟机之间的文件共享暂时还没有想到好的解决办法，经过考虑决定以最小化配置 1C512M 的配置搭建一个在宿主机和多台虚拟机均可直接访问的文件共享服务。
+我个人是 [使用 Linux 作为主系统](https://blog.typeof.cc/posts/81acf3e4.html) ，同时在上篇文章 [Manjaro & Arch 配置 KVM](https://blog.typeof.cc/posts/8fa8ffbb.html) 中，将虚拟机从 VMware 替换为了开源 KVM 后，与 Windows 虚拟机之间的文件共享暂时还没有想到好的解决办法，经过考虑决定以最小化配置 1C512M 的配置搭建一个在宿主机和多台虚拟机均可直接访问的文件共享服务。
 
 <!--more-->
 
-## 安装 Samba
+## 安装与确认安装
 以 CentOS 为例，使用 `yum` 或者 `dnf` 安装即可，依照所使用发行版的软件安装方式安装即可。
-
-## 查询软件安装
 ```
+# 查询软件安装
 #以 CentOS 为例
 rpm -qa | grep "samba"
 #以 Arch 系为例
@@ -88,10 +87,8 @@ Samba 共享配置部分：
         guest ok = no		#是否公开
 ```
 
-### 用户组共享方式
->懒，有人留言再来写🤣
 
-## 重启服务启用文件共享
+## 重启服务
 ```
 systemctl restart smb
 ```
@@ -112,13 +109,13 @@ $ mount -t cifs //server/Folder /mnt/ -o username=your-username
 
 ## 无法访问排查
 （可能更新）
-### Firewalld 防火墙
+### Firewalld 
 >此处建议不关闭防火墙，而允许 Samba 穿越防火墙，以便外部用户可以访问 Samba 共享。
 ```
 $ firewalld-cmd --permanent --add-service=samba
 $ firewaldd-cmd --reload
 ```
-### SELinux 安全上下文
+### SELinux 
 >在 CentOS 上 SELinux 是默认安装开启的，通常情况下都会导致 Samba, FTP 等应用无法访问相应目录，此处就 Samba 服务的解决方案如下：
 ```
 #放行 Samba 用户 Home 目录权限：

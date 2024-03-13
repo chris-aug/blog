@@ -11,12 +11,12 @@ katex:
 aplayer: 
 ---
 
-## 网络管理命令行工具 - nmcli
+## 命令行工具
 nmcli 的全称是，NetworkManager Command Line Tool - 网络管理命令行工具。nmcli 是一个非常丰富和灵活的命令行工具，NetworkManager 是管理和监控网络设置的守护进程，设备既就是网络接口，连接是对网络接口的配置，一个网络接口可以有多个连接配置，不过只能由一个连接生效。同时 nmcli 对网络的配置是可以直接写入配置文件的。
 
 <!--more-->
 
-## 网络主机名设置
+## 设置主机名
 显示主机名
 ```
 hostname
@@ -27,11 +27,11 @@ hostnamectl status
 hostnamectl set-hostname Hostname
 ```
 
-### Device 设备管理
+### 设备管理
 ```
 nmcli device
 ```
-### Connection 连接管理
+### 连接管理
 ```
 nmcli connection
 ```
@@ -46,7 +46,7 @@ nm-connection-editor
 	nmtui-edit
 	nmtui-hostname
 ```
-### 创建连接（default;DHCP）
+### 创建 DHCP
 ```shell
 $ nmcli connection add con-name default type Ethernet ifname eth0
 ```
@@ -54,7 +54,7 @@ $ nmcli connection add con-name default type Ethernet ifname eth0
 ```shell
 $ nmcli connection defult delete
 ```
-### 创建连接（指定参数：固定 IP 地址不自动连接）
+### 创建 Manual
 ```shell
 $ nmcli connection add con-name TEST2 ipv4.method manual finame ens33 autoconnect no type Ethernet ipv4.adderess 172.16.16.100/24 gw4 172.16.16.1
 ```
@@ -79,7 +79,7 @@ $ nmcli connection modify ens33 connection.autoconnect yes
 | connection.interface-name eth0　 |　DEVICE=eth0                     |
 | 802-3-ethernet.mac-address . . . |　HWADDR= . . .                   | 
 
-## Linux Network Proxy
+## Linux
 部分情况下使用 Konsole 或者其 Terminal 会对部分服务使用本地代理，但在这篇文章中仅叙述常见的且使用需求较高的终端和 Git 代理的设置方法。
 
 ### 终端代理

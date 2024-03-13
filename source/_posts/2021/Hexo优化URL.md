@@ -72,12 +72,11 @@ urlname:
 - 在字段的冒号后需填入一个空格，才能填入值。
 
 现在开始在你创建完文章后便可以手动设置URL，参考你正在访问的这篇文章链接：
-`https://blog.blankcoder.com/2021/08/Hexo-optimized-article-url.html`，而不是`https://blog.blankcoder.com/2021/08/Hexo优化文章URL.html`你可以尝试将此包含中文地址发送到 Wechat 等部分软件；你会发现中文部分被自动省略，要想被识别，必须将 URL 转义。
+`https://blog.typeof.cc/2021/08/Hexo-optimized-article-url.html`，而不是`https://blog.typeof.cc/2021/08/Hexo优化文章URL.html`你可以尝试将此包含中文地址发送到 Wechat 等部分软件；你会发现中文部分被自动省略，要想被识别，必须将 URL 转义。
 
 ---
 
 ## 更新 2022/11/30
 现在已经更新为采用 URL 自动生成：
 - 插件 [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink)
-- 本文当前 URL `https://blog.blankcoder.com/posts/3223b82e.html`
-- 更多信息查看 [记录一下博客翻新](https://blog.blankcoder.com/posts/15941.html)
+- 本文当前 URL `https://blog.typeof.cc/posts/3223b82e.html`

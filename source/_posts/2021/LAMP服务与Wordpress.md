@@ -12,7 +12,7 @@ aplayer:
 hidden: true
 ---
 
-## 当前文章实现环境
+## 当前实现环境
 - CentOS 8 
 - Apache `Httpd 下文使用 Apache 名称`
 - MariaDB `与 MySQL 完全兼容 下文只使用 MariaDB 名称`
@@ -69,12 +69,12 @@ enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-8
 ```
-#### 清理并重新建立缓存
+#### 重建缓存
 ```shell
 yum clean all
 yum makecache
 ```
-#### 安装 epel & remi 存储库并检查
+#### 扩展库
 ```shell
 epel
 dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
@@ -84,7 +84,7 @@ remi
 dnf -y install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 rpm -qa | grep remi
 ```
-#### 获取 PHP 模块流列表
+#### PHP 模块流列表
 ```shell
 dnf module list php
 ```
@@ -119,14 +119,14 @@ zip – Used for decompressing Plugins, Themes, and WordPress update packages.
 >亦可使用 dnf install 安装所需 Package 是一样的
 >检查安装与查看版本命令 Packagename -v
 
-## 数据库 MariaDB
+## MariaDB
 
-### 安装数据库
+### 安装
 ```shell
 yum install -y mariadb-server
 ```
 
-### 配置数据库安全设置
+### 配置安全设置
 ```shell
 mysql_secure_installation
 ```
@@ -140,7 +140,7 @@ grant all privileges on dbname.* to 'user' @ 'localhost' identified by 'password
 flush privileges;
 ```
 ## 配置 Apache & Wordpress
-### 获取 Wordpress 源码
+### 安装 Wordpress
 ```shell
 cd /var/www/html
 wget https://cn.wordpress.org/latest-zh_CN.tar.gz
@@ -149,7 +149,7 @@ cp /wordpress/* /var/www/html #非必需
 rm latest-zh_CN.tar.gz        #非必需
 rm -r wordpress               #非必需
 ```
-### 修改网站目录权限
+### 修改目录权限
 ```shell
 chown -R www-data /var/www/html/ #Ubuntu
 chown -R apache /var/www/html/   #CentOS
@@ -163,7 +163,7 @@ http://(e.g[1.1.1.1]) or http://URL
 填入数据库信息以及管理员等账户信息
 ![首次登陆后台设置页面](https://main.qcloudimg.com/raw/c79c35b3d75f763561d7024f46983611.png)
 
-### Apache 配置文件
+### Apache 配置
 #### HTTP 虚拟主机
 ```shell
 <VirtualHost *:80>
@@ -219,7 +219,7 @@ http://(e.g[1.1.1.1]) or http://URL
  SSLCertificateChainFile /etc/httpd/ssl/1_root_bundle.crt 
 </VirtualHost>
 ```
-### HTTP 自动跳转 HTTPS 的安全配置（可选）
+### 自动跳转 HTTPS
 1、编辑 /etc/httpd/conf 目录下的 httpd.conf 配置文件
 确认该配置文件是否存在LoadModule rewrite_module modules/mod_rewrite.so并取消注释
 2、在HTTP虚拟主机配置文件中添加重写参数

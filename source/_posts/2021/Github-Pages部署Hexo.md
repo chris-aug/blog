@@ -81,27 +81,6 @@ git config --global user.name "Github Username"
 git config --global user.email "Github注册邮箱"
 ```
 
-### 创建 Personal Access Token (either)
-Github 常规操作的在2021年情人节（8月14日）全局干掉了 repo 使用密码验证，所以不论是 HTTPS 还是 SSH 从现在开始你都不能使用密码，只能在 Personal Access Token 或者 SSH 密钥中二选一。
-[查看官方解释](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/)
-创建 Token：
-1、在任何页面的右上角，点击个人资料照片，然后点击 Settings
-![userbar-account-settings](https://docs.github.com/assets/images/help/settings/userbar-account-settings.png)
-2、在左侧边栏中，点击 Developer Settings
-![developer-settings](https://docs.github.com/assets/images/help/settings/developer-settings.png)
-3、在左侧边栏中，单击 Personal access tokens
-![personal_access_tokens_tab](https://docs.github.com/assets/images/help/settings/personal_access_tokens_tab.png)
-4、创建 Token 并设置一个描述名称和有效期以及控制权限。
-
-5、和 SSH 密钥一样，同样有方法可以避免每次都要输入 Token，你可以将 Token 写入远程仓库链接
-
-```sh
-git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
-```
-- `<your_token>`：换成你自己得到的 token
-- `<USERNAME>`：是你自己 github 的用户名
-- `<REPO>`：是你的仓库名称
-
 ### 生成 SSH 密钥文件 (either)
 生成密钥文件是便于推送的时候解决身份验证问题
 创建密钥：
