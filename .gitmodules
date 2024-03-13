@@ -4,3 +4,6 @@
 [submodule "themes/themes/typeof-theme"]
 	path = themes/themes/typeof-theme
 	url = https://github.com/chris-aug/typeof-theme.git
+[submodule "themes/typeof-theme"]
+	path = themes/typeof-theme
+	url = https://github.com/chris-aug/typeof-theme.git
