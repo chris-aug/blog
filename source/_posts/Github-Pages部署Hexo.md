@@ -58,7 +58,7 @@ Node.js 为大多数平台提供了[官方安装程序](https://nodejs.org/en/do
 ## 安装 Hexo
 ### 使用 npm 命令安装 Hexo
 输入：
-```shell
+```sh
 npm install -g hexo-cli
 ```
 ### 初始化 Hexo
@@ -70,7 +70,7 @@ hexo init Blog #Blog为目录名称可带路径自定义
 Hexo 在本地是实时文件渲染所有设置或文档更改直接刷新即可，不需要执行 Generate.
 
 ## Hexo 基础命令
-```shell
+```sh
 npm install -g hexo #安装Hexo
 npm update -g hexo  #更新
 hexo init #初始化hexo
@@ -102,7 +102,7 @@ Github 常规操作的在2021年情人节（8月14日）全局干掉了 repo 使
 
 5、和 SSH 密钥一样，同样有方法可以避免每次都要输入 Token，你可以将 Token 写入远程仓库链接
 
-```shell
+```sh
 git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
 ```
 - `<your_token>`：换成你自己得到的 token
@@ -121,7 +121,7 @@ ssh-keygen -t rsa -C "Github 注册邮箱"
 
 
 测试密钥访问：
-```shell
+```sh
 ssh -T git@github.com
 #输入yes后看到返回值为:
 Hi "Github Username" You've successfully authenticated, but Github does not provide shell access.
@@ -143,7 +143,7 @@ deploy:
 ```
 ### 生成文件与推送
 在完成了上述操作后，现在需要加载一个推送插件，命令为：
-```shell
+```sh
 npm install hexo-deployer-git --save
 ```
 现在，你可以生成页面文件，并部署到 Github Pages.

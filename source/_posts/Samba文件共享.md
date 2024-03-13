@@ -32,7 +32,7 @@ pacman -Qs samba
 ### 匿名访问配置
 >Global 为全局配置，Disk 为共享配置。
 >匿名访问是不设限制的文件访问，任何能访问到共享主机的设备都可以读取或写入。
-```
+```sh
 [global]
         workgroup = SAMBA	#工作组名称        
         security = user
