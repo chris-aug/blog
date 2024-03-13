@@ -1,18 +1,16 @@
 ---
 title: LAMP 服务与 Wordpress
 tags: Wordpress
-categories: Tips
-cover: /img/cover/a1901184.webp
+categories: Obsolete
 abbrlink: a1901184
 date: 2021-08-27 19:48:42
-description:  LAMP 的搭建与 Wordpress 基础功能部署
+description:  
 sticky: 
 comments:
 katex: 
 aplayer: 
+hidden: true
 ---
-
-![封面图](/img/cover/a1901184.webp)
 
 ## 当前文章实现环境
 - CentOS 8 
@@ -20,6 +18,8 @@ aplayer:
 - MariaDB `与 MySQL 完全兼容 下文只使用 MariaDB 名称`
 - Wordpress 5.8
 - **如果你使用其他环境请自行根据实际需求调整**
+
+<!--more-->
 
 ## LAMP
 ### Apache & MariaDB

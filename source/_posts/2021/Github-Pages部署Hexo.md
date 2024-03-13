@@ -1,26 +1,17 @@
 ---
 title: Github-Pages 部署 Hexo
 tags: Hexo
-categories: Tips
-cover: /img/cover/5ffdd8dd.webp
+categories: Obsolete
 abbrlink: 5ffdd8dd
 date: 2021-08-27 20:21:07
-description: Hexo 入门指北
+description: 
 sticky: 
 comments:
 katex: 
 aplayer:
+hidden: true
 ---
-![封面图](/img/cover/5ffdd8dd.webp)
 
-## 什么是 Hexo
-
-Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](https://daringfireball.net/projects/markdown/)（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
-
-## 什么是 Github Pages
-GitHub Pages 是一个静态站点托管服务。
-Github 页面旨在直接从 GitHub 仓库中直接托管您的个人、组织或项目页面。了解关于 GitHub Pages 网站不同类型的更多信息，请参阅[用户、组织和项目页面](https://help.github.com/articles/user-organization-and-project-pages/)。
-GitHub Pages 是静态站点托管服务器，不支持 PHP ，Ruby 或 Python 等服务器端代码。
 
 ## 搭建步骤：
 
@@ -35,6 +26,8 @@ GitHub Pages 是静态站点托管服务器，不支持 PHP ，Ruby 或 Python �
 - 初识 MarkDown 语法
 - 发布文章
 - 个性化设置
+
+<!--more-->
 
 ### 创建 Github 个人仓库
 登录到Github创建一个新的仓库，仓库名称为 username.github.io。这是固定写法，免费账户 Github Pages 子域名必须为用户名；如果此时你还没有账户你需要自行在 [Github](https://github.com) 注册。

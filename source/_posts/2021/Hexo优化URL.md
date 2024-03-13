@@ -1,21 +1,16 @@
 ---
 title: Hexo 优化文章 URL
 tags: Hexo
-categories: Tips
-cover: /img/cover/3223b82e.webp
+categories: Obsolete
 abbrlink: 3223b82e
 date: 2021-08-28 20:18:12
-description: Hexo 入门优化
+description: 
 sticky: 
 comments:
 katex: 
 aplayer:
+hidden: true
 ---
-![封面图](/img/cover/3223b82e.webp)
-
-## 前言
-
-此前写过基于 [Github-Pages 部署 Hexo](https://blog.blankcoder.com/posts/5ffdd8dd.html) 纯静态博客网站，但是 Hexo 默认的文章链接是以文章标题命名，对于中文标题显得不是那么友好，为了缩短 URL 必须剔除掉可能被转义的中文部分。
 
 ## 如何优化 URL ?
 
@@ -29,6 +24,8 @@ aplayer:
 - 解决部分软件不能完整识别含中文字符URL，中文部分被自动省略导致到访问错误的页面
 
 这样的优化方式同样适用与其他的博客，但是你可能需要参考你所使用的博客框架文档。
+
+<!--more-->
 
 ## 修改永久链接
 修改永久链接需要修改Hexo根目录下的`_config.yml`文件中的`permalink`字段。

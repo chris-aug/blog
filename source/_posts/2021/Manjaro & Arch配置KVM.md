@@ -1,8 +1,7 @@
 ---
 title: Manjaro & Arch 配置 KVM
-tags: Virtalization
+tags: 
 categories: Linux
-cover: /img/cover/8fa8ffbb.webp
 abbrlink: 8fa8ffbb
 date: 2021-10-24 16:43:00
 description:  Linux GUI KVM 虚拟化基础配置
@@ -11,12 +10,6 @@ comments:
 katex: 
 aplayer: 
 ---
-![封面图](/img/cover/8fa8ffbb.webp)
-
-## 什么是 KVM
-
-KVM (Kernel-based Virtual Machine)  由 Quramnet 开发，此公司于 2008 年被 Red Hat 收购；自 Linux 2.6.20 后整合到内核，这个模块使得 Linux 变成了一个 Hypervisor 层；运行虚拟机仅需要加载相应的 KVM 模块，依托于 PU 虚拟化指令集，性能、安全性、兼容性、稳定性表现良好，每一个虚拟化操作系统表现为单个系统进程，于 Linux 安全模块 SELinux 安全模块很好结合。
-在 KVM 中，可以运行各种 GUN/Linux,  Windows 或者其他系统镜像（例如： FreeBSD ）；每一个虚拟机都可以提供独享的虚拟硬件，包括网卡、硬盘等；虚拟机也可以直通主机设备硬件（例如： GPU PCI pass through ）；但是 KVM 需要硬件支持虚拟化技术，需要使用 Intel 处理器 ( 含 VT 虚拟化技术 ) 或 AMD 处理器 ( 含 SVM 安全虚拟机技术的 AMD 处理器 ,  也叫 AMD-V ).
 
 ## 检查 KVM 支持
 ### 硬件检查（主要）
@@ -30,6 +23,8 @@ Virtualization:                  VT-x
 ```
 如果运行后没有输出，那么你的处理器可能不支持硬件虚拟化，不能使用 KVM。
 **注意：** 部分品牌机，会默认关闭虚拟化支持，请前往 BIOS 检查启用
+
+<!--more-->
 
 ### 内核检查
 通常情况下，相对较新的 Linux 内核都提供了相应的内核模块来支持 KVM.

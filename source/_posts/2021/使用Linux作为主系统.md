@@ -1,8 +1,7 @@
 ---
 title: 让 Linux 作为主力系统
-tags: GUI
+tags: 
 categories: Linux
-cover: /img/cover/81acf3e4.webp
 abbrlink: 81acf3e4
 date: 2021-09-01 19:16:23
 description: Linux GUI 入门
@@ -11,11 +10,12 @@ comments:
 katex: 
 aplayer:
 ---
-![封面图](/img/cover/81acf3e4.webp)
 
 ## 决定使用 Linux 的原因
 
 Linux 系统从我高中起我就开始尝试将系统安装至实体机，只是我高中阶段使用的阿苏斯-坠机堡垒，非常坠机的让常用的 Linux 发行版几乎不能正常运行在电脑上，以我当时对计算机以及 Linux 的知识也并没有办法直接去解决这些问题。以至于让我很长一段时间学习使用Linux系统都是使用 Vmware Workstation 等虚拟机软件。
+
+<!--more-->
 
 **我现在的桌面：**
 

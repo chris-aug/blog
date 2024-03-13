@@ -1,17 +1,21 @@
 ---
 title: Linux Network Manager
-tags: Network
+tags: 
 categories: Linux
-cover: /img/cover/e08c6853.webp
 abbrlink: e08c6853
 date: 2021-08-29 23:02:08
-description:  Linux 网络管理命令行工具的基本使用
+description:  
 sticky: 
 comments:
 katex: 
 aplayer: 
 ---
-![封面图](/img/cover/e08c6853.webp)
+
+## 网络管理命令行工具 - nmcli
+nmcli 的全称是，NetworkManager Command Line Tool - 网络管理命令行工具。nmcli 是一个非常丰富和灵活的命令行工具，NetworkManager 是管理和监控网络设置的守护进程，设备既就是网络接口，连接是对网络接口的配置，一个网络接口可以有多个连接配置，不过只能由一个连接生效。同时 nmcli 对网络的配置是可以直接写入配置文件的。
+
+<!--more-->
+
 ## 网络主机名设置
 显示主机名
 ```
@@ -22,9 +26,6 @@ hostnamectl status
 ```
 hostnamectl set-hostname Hostname
 ```
-
-## 网络管理命令行工具 - nmcli
-nmcli 的全称是，NetworkManager Command Line Tool - 网络管理命令行工具。nmcli 是一个非常丰富和灵活的命令行工具，NetworkManager 是管理和监控网络设置的守护进程，设备既就是网络接口，连接是对网络接口的配置，一个网络接口可以有多个连接配置，不过只能由一个连接生效。同时 nmcli 对网络的配置是可以直接写入配置文件的。
 
 ### Device 设备管理
 ```

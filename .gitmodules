@@ -7,3 +7,6 @@
 [submodule "themes/typeof-theme"]
 	path = themes/typeof-theme
 	url = https://github.com/chris-aug/typeof-theme.git
+[submodule "themes/next"]
+	path = themes/next
+	url = https://github.com/next-theme/hexo-theme-next

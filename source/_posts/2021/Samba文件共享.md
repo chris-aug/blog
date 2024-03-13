@@ -1,22 +1,21 @@
 ---
 title: Samba 文件共享
-tags: Samba
+tags: 
 categories: Linux
-cover: /img/cover/111902ff.webp
 abbrlink: 111902ff
 date: 2021-10-27 14:28:48
-description: Samba 网络文件共享基础设置
+description: "Samba 文件共享"
 sticky:
 comments:
 katex:
 aplayer:
 ---
 
-![封面图](/img/cover/111902ff.webp)
+## 我的使用场景
 
-## 前言
+我个人是 [使用 Linux 作为主系统](https://blog.blankcoder.com/posts/81acf3e4.html) ，同时在上篇文章 [Manjaro & Arch 配置 KVM](https://blog.blankcoder.com/posts/8fa8ffbb.html) 中，将虚拟机从 VMware 替换为了开源 KVM 后，与 Windows 虚拟机之间的文件共享暂时还没有想到好的解决办法，经过考虑决定以最小化配置 1C512M 的配置搭建一个在宿主机和多台虚拟机均可直接访问的文件共享服务。
 
-基于我个人是 [使用 Linux 作为主系统](https://blog.blankcoder.com/posts/81acf3e4.html) ，同时在上篇文章 [Manjaro & Arch 配置 KVM](https://blog.blankcoder.com/posts/8fa8ffbb.html) 中，将虚拟机从 VMware 替换为了开源 KVM 后，与 Windows 虚拟机之间的文件共享暂时还没有想到好的解决办法，经过考虑决定以最小化配置 1C512M 的配置搭建一个在宿主机和多台虚拟机均可直接访问的文件共享服务。
+<!--more-->
 
 ## 安装 Samba
 以 CentOS 为例，使用 `yum` 或者 `dnf` 安装即可，依照所使用发行版的软件安装方式安装即可。

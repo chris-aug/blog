@@ -1,8 +1,7 @@
 ---
 title: Wordpress 自定义与管理
 tags: Wordpress
-categories: Tips
-cover: /img/cover/de3c5b65.webp
+categories: Obsolete
 abbrlink: de3c5b65
 date: 2021-08-28 14:47:16
 description:  Wordpress 基础自定义管理与 SMTP
@@ -10,8 +9,8 @@ sticky:
 comments:
 katex: 
 aplayer: 
+hidden: true
 ---
-![封面图](/img/cover/de3c5b65.webp)
 ## Wordpress 搭建
 参考前文：
 - [LAMP 服务与 Wordpress](https://blog.blankcoder.com/posts/a1901184.html)
@@ -22,6 +21,8 @@ Wordpress 可自定义的项目非常多，即使在保证不修改 Wordpress �
 本文参考的 [Wordpress 官方文档](https://codex.wordpress.org/Customizing_the_Login_Form)。
 
 其他需要修改的例如网站主页，你应该参考你的主题文档。
+
+<!--more-->
 
 **注意：**
 
