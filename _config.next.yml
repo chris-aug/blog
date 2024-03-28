@@ -106,6 +106,7 @@ menu:
   Home: / || fa fa-home
   Java: /Java/ || fa fa-coffee
   Linux: /Linux/ || fa fa-terminal
+  Container: /Container/ || fa fa-cloud
   Obsolete: /Obsolete/ || fa fa-trash
   About: /about/ || fa fa-user
 
